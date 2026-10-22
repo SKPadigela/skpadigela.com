@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | My Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">MyWebsite</a>
+    <button class="menu-toggle" aria-label="Toggle navigation"
+      aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a class="active" href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <h1>Contact Us</h1>
+      <p>Let's start a conversation. We are happy to hear from you.</p>
+    </section>
+
+    <section class="contact-layout section">
+      <div class="contact-info">
+        <img src="images/contact.jpg" alt="Our contact and support team">
+        <h2>Get in Touch</h2>
+        <p>Have a question or an idea? Send us a message.</p>
+        <p><strong>Email:</strong> your-email@example.com</p>
+        <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+        <p><strong>Address:</strong> Add your business address here.</p>
+      </div>
+
+      <form id="contact-form" class="contact-form">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text"
+          placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email"
+          placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5"
+          placeholder="How can we help?" required></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span class="year"></span> MyWebsite. All rights reserved.</p>
+  </footer>
+</body>
+</html>
