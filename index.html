@@ -1,10 +1,69 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | My Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This page is hosted entirely on GitHub Pages.</p>
+  <header class="navbar">
+    <a class="logo" href="index.html">MyWebsite</a>
+    <button class="menu-toggle" aria-label="Toggle navigation"
+      aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO OUR WEBSITE</p>
+        <h1>Ideas Today.<br>Better Tomorrow.</h1>
+        <p>
+          Discover who we are, what we do, and how we can
+          help you achieve your goals.
+        </p>
+        <a class="btn" href="about.html">Discover More</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/home.jpg" alt="Our work and ideas">
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Explore Our Website</h2>
+      <p class="section-intro">
+        Learn about our team and get in touch with us.
+      </p>
+      <div class="cards">
+        <article class="card">
+          <img src="images/about.jpg" alt="Our team">
+          <div class="card-body">
+            <h3>About Us</h3>
+            <p>Learn about our story, mission and vision.</p>
+            <a href="about.html">Learn more →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/contact.jpg" alt="Contact our team">
+          <div class="card-body">
+            <h3>Contact Us</h3>
+            <p>Have a question? We would love to hear from you.</p>
+            <a href="contact.html">Get in touch →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span class="year"></span> MyWebsite. All rights reserved.</p>
+  </footer>
 </body>
 </html>
